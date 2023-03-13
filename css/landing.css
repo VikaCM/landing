@@ -250,7 +250,7 @@
           justify-content: center;
   justify-items: center;
   padding-top: 15em;
-  margin-top: -8em;
+  margin-top: -203px;
 }
 @supports (display: grid) {
   .first__container {
@@ -270,7 +270,7 @@
             justify-content: center;
     justify-items: center;
     padding-top: 15em;
-    margin-top: -8em;
+    margin-top: -203px;
   }
 }
 @media (max-width: 375px) {
