@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+@import "mixes";
+
+@import "header.scss";
+@import "first-container";
+@import "second-container.scss";
+@import "third__container";
+@import "footer.scss";
+
+.container {
+  max-width: 1087px;
+  margin: 0 auto;
+  width: 100%;
+}
+.title {
+  font: Arial;
+  font-weight: 700;
+  font-size: 36px;
+  align-items: center;
+  color: #000000;
+  @media (max-width: 375px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

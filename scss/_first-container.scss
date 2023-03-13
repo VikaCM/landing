@@ -1,0 +1,137 @@
+.first__container-fon-image {
+  // background-image: url(/img/fonimg.png);
+  // background-size: 100% 100%;
+  background: #ededf4;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 1115px;
+  left: 0px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  opacity: 0.2;
+}
+
+.first__container {
+  @include container;
+  @include flex_container;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 15em;
+  margin-top: -8em;
+
+  @supports (display: grid) {
+    grid-template-columns: 1fr 1fr;
+    @include container;
+    @include flex_container;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 15em;
+    margin-top: -8em;
+  }
+  @media (max-width: 375px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 12px;
+  }
+}
+
+.first__title {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 36px;
+  @media (max-width: 375px) {
+    font-size: 22px;
+  }
+}
+.title {
+}
+.first__first-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  @media (max-width: 375px) {
+    width: 351px;
+    flex-direction: column;
+  }
+}
+
+.first__first-wrapp,
+.first__second-wrapp {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.first__subtitle-republication,
+.first__subtitle-booster {
+  font-weight: 700px;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Arial";
+  font-style: normal;
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
+}
+.first__text-republication,
+.first__text-booster {
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 154%;
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}
+.first__img-republication {
+  @include flex_container;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 19px;
+  background: #ffffff;
+  border-radius: 9px;
+  @media (max-width: 375px) {
+    width: 332px;
+    height: 333px;
+  }
+}
+.first__second-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 88px;
+  @media (max-width: 375px) {
+    width: 351px;
+    flex-direction: column;
+  }
+}
+.first__img-booster {
+  border-radius: 9px;
+}
+
+.first__second-wrapp {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  margin-left: 73px;
+  @media (max-width: 375px) {
+    width: 351px;
+    text-align: center;
+  }
+}
+.first__subtitle-booster {
+}
+.first__text-booster {
+}

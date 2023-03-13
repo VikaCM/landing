@@ -1,0 +1,140 @@
+.second__container {
+  @include container;
+  @include flex_container;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 60px;
+  justify-content: space-between;
+  margin-top: 87px;
+
+  @supports (display: grid) {
+    grid-template-columns: 1fr 1fr;
+    @include container;
+    @include flex_container;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 87px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    text-align: center;
+  }
+}
+
+.second__title {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 64px;
+}
+.title {
+}
+.second__container-wrapp {
+  // flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 12px;
+  }
+}
+.second__card-wrap {
+}
+.second__first-card {
+}
+.card {
+  @include flex_container;
+  max-width: 232px;
+  height: 245px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 16px 12px;
+}
+.second__frame-title-card {
+  @include flex_container;
+  padding: 10px;
+  width: 208px;
+  height: 50px;
+  // gap: 4px;
+  border-radius: 4px;
+}
+.second__title-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20.7px;
+  letter-spacing: 0.015em;
+  padding: 10px;
+}
+.second__subtitle-card {
+  font: 400 arial;
+  font-size: 11px;
+  line-height: 12.65px;
+  color: #808080;
+  padding-top: 4px;
+}
+.second__content-card {
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  color: black;
+  padding-bottom: 24px;
+  @media (max-width: 375px) {
+    text-align: start;
+  }
+}
+.second__card-options {
+  @include flex_container;
+  margin-top: 32px;
+}
+.second__card-img-wrapp {
+  display: flex;
+}
+
+.second__card-img-x {
+  width: 19.4px;
+  height: 13px;
+  margin-right: 18px;
+}
+.second__card-img-display {
+  width: 23px;
+  height: 21px;
+  margin-right: 18px;
+}
+.second__card-img-hour {
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+}
+.second__second-card {
+}
+.second__card-wrap ul {
+  height: 100px;
+  padding: 12px 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166.52%;
+  text-align: center;
+}
+.second__card-wrap li,
+p {
+  color: #8d8d8d;
+}
+.second__third-card {
+}
+.second__fourth-card {
+}

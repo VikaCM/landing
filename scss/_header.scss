@@ -1,0 +1,134 @@
+.header {
+}
+.header__container {
+  @include container;
+  @include flex_container;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 36px;
+
+  @supports (display: grid) {
+    grid-template-columns: 1fr 1fr;
+    @include container;
+    @include flex_container;
+    flex-direction: row;
+    padding-top: 36px;
+  }
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 29px;
+  }
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+  @media (max-width: 375px) {
+    width: 256px;
+    height: 33px;
+  }
+}
+.header__logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 29px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #979797;
+  @media (max-width: 375px) {
+  }
+}
+.logo {
+}
+.header__left-block {
+  display: flex;
+  flex-direction: column;
+  // margin-right: 12px;
+  width: 515px;
+  margin-right: 80px;
+  @media (max-width: 375px) {
+    width: 212px;
+    height: 243px;
+    margin: 0;
+    align-self: flex-start;
+  }
+}
+
+.header__right-block {
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+  box-sizing: border-box;
+  justify-content: center;
+  border-radius: 4px;
+  @media (max-width: 375px) {
+    display: flex;
+    position: relative;
+    width: 212px;
+    height: 243px;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}
+
+.header__title {
+  display: flex;
+  line-height: 127.5%;
+  margin-bottom: 36px;
+  @media (max-width: 375px) {
+    font-size: 24px;
+  }
+}
+.title {
+  font: Arial;
+  font-weight: 700;
+  font-size: 36px;
+  align-items: center;
+  color: #1a1a1a;
+  @media (max-width: 375px) {
+    font-size: 24px;
+  }
+}
+.header__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 22px;
+  line-height: 136%;
+  color: #000000;
+  margin-bottom: 65px;
+  @media (max-width: 375px) {
+    font-size: 22px;
+  }
+}
+.header__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  width: 262px;
+  height: 57px;
+  background: #0058c5;
+  border-radius: 6px;
+}
+.button a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 162px;
+  height: 23px;
+  font-family: "Arial";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 127.5%;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__boosterFrame {
+}
