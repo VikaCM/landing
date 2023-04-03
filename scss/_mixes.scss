@@ -1,6 +1,7 @@
 @mixin container {
   max-width: 1087px;
   margin: 0 auto;
+  justify-content: center;
 }
 @mixin flex_container {
   display: flex;

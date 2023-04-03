@@ -11,23 +11,36 @@
 @import "third__container";
 @import "footer.scss";
 
-.container {
-  max-width: 1087px;
-  margin: 0 auto;
-  width: 100%;
-}
+
 .title {
-  font: Arial;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Arial";
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
+  line-height: 127.5%;
+  flex-direction: column;
   align-items: center;
-  color: #000000;
-  @media (max-width: 375px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #1a1a1a;
+
+  @media (min-width: 768px) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 127.5%;
     text-align: center;
+    color: #000000;
+    padding: 0;
+  }
+
+  @media (min-width: 1000px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 127.5%;
+    text-align: center;
+    color: #000000;
+    padding: 0;
   }
 }
